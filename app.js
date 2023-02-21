@@ -11,6 +11,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get('/test', (req, res) => {
+  res.json({ msg: 'Hello World!' })
+})
+
 // #############################################################################
 // This configures static hosting for files in /public that have the extensions
 // listed in the array.
